@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://ticketraise-node-mern.onrender.com/api'; // Use the live backend URL
 
 // Login function
 export const login = (credentials) => axios.post(`${API_URL}/login`, credentials);
@@ -11,7 +11,6 @@ export const getQueries = ({ userId, role }) => {
   return axios.get(`${API_URL}/allQueries?${queryParams}`);
 };
 
-  
 export const addQuery = (queryData) => {
   return axios.post(`${API_URL}/addQuery`, queryData);
 };
