@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+/* --- Responsive Styles --- */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Slightly reduce font size */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Reduce logo size */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(6px + 2vmin); /* Further reduce font size */
+    padding: 10px; /* Add smaller padding */
+  }
+
+  .App-logo {
+    height: 20vmin; /* Further reduce logo size */
+  }
+
+  .App {
+    padding: 10px; /* Ensure padding around content */
+  }
+}

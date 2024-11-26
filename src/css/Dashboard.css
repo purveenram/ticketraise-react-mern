@@ -1,23 +1,59 @@
 .dashboard-container {
-    padding: 2rem;
-    font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-header {
+  color: #6a1b9a;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.logout-button {
+  background-color: #8e24aa;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #6a1b9a;
+}
+
+/* --- Responsive Styles --- */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1.5rem;
   }
-  
+
   .dashboard-header {
-    color: #6a1b9a;
-    font-weight: 600;
+    font-size: 1.3rem; /* Slightly smaller font size */
   }
-  
+
   .logout-button {
-    background-color: #8e24aa;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 0.9rem; /* Reduce font size for button */
+    padding: 0.7rem 1.2rem; /* Adjust padding for smaller screens */
   }
-  
-  .logout-button:hover {
-    background-color: #6a1b9a;
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 1rem;
   }
-  
+
+  .dashboard-header {
+    font-size: 1.1rem; /* Further reduce header font size */
+    text-align: center; /* Center-align text for mobile */
+  }
+
+  .logout-button {
+    font-size: 0.8rem; /* Smaller button font size */
+    padding: 0.6rem 1rem; /* Compact padding */
+  }
+}
